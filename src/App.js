@@ -13,7 +13,7 @@ import StatusPanel from './components/statusPanel';
  class App extends Component {
   render() {
     return (
-      <div style={{height: '1000px', position: 'relative'}}>
+      <div style={{height: '800px', position: 'relative'}}>
       <Layout fixedHeader fixedDrawer>
           <Header className="header-color" title="SafeNet AT KeySecure">
               <Textfield
