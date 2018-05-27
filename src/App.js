@@ -9,6 +9,7 @@ import About from './components/about';
 import PaperPanel from './components/paperpanel';
 import StatusPanel from './components/statusPanel';
 import LandingPaage from './components/landingpage';
+import TestForm from './components/testForm';
 
 
  class App extends Component {
@@ -30,7 +31,7 @@ import LandingPaage from './components/landingpage';
                   <Navigation>
                       <Link to="/">Landing Page</Link>
                       <Link to="/Status">Status Page</Link>
-                      <Link to="/">Link</Link>
+                      <Link to="/Test">Test Form</Link>
                       <About/>                  
                   </Navigation>
               </Drawer>
@@ -38,7 +39,7 @@ import LandingPaage from './components/landingpage';
                 <div className="page-content"/>
                 <Route path="/" exact component={LandingPaage}/>
                 <Route path="/Status" exact component={StatusPanel}/>
-                
+                <Route path="/Test" exact component={TestForm}/>
                 {/* <StatusPanel/>             */}
               </Content>
           </Layout>
