@@ -31,7 +31,8 @@ import TestForm from './components/testForm';
                   <Navigation>
                       <Link to="/">Landing Page</Link>
                       <Link to="/Status">Status Page</Link>
-                      <Link to="/Test">Test Form</Link>
+                      <Link to="/Test">TestForm</Link>
+                      <Link to="/About">About KeySecure</Link>
                       <About/>                  
                   </Navigation>
               </Drawer>
@@ -40,7 +41,7 @@ import TestForm from './components/testForm';
                 <Route path="/" exact component={LandingPaage}/>
                 <Route path="/Status" exact component={StatusPanel}/>
                 <Route path="/Test" exact component={TestForm}/>
-                {/* <StatusPanel/>             */}
+                <Route path="/About" exact component={About}/>                
               </Content>
           </Layout>
       </div>
